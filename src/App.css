@@ -1,0 +1,103 @@
+/* App.css */
+
+.app {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-container button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #990011FF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+.list {
+  margin-top: 20px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+}
+
+.leftSide p {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+}
+
+.rightSide button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.rightSide button svg {
+  display: block;
+}
+
+.delete-btn svg path {
+  fill: #990011FF;
+}
+
+.edit-btn svg path {
+  fill:#64b5f6;
+}
+
+.delete-btn:hover svg path {
+  fill: #990011FF;
+}
+
+.edit-btn:hover svg path {
+  fill: #64b5f6;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
