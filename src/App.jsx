@@ -8,10 +8,14 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
+    
     const [todos, setTodos] = useState([]);
 
     const handleAddTodo = (text) => {
-      if (text.trim() === '') return;
+      if (text.trim() === '') {
+        toast.error('Todo is Empty!!',{ autoClose: 1500 });
+        return;
+      }
   
       if (todos.some((todo) => todo.text.toLowerCase() === text.trim().toLowerCase())) {
           toast.error('Todo already exists!',{ autoClose: 1500 });
